@@ -14,13 +14,13 @@ public class CellPhoneApplication {
         display(phone1);
         display(phone2);
 
-        phone1.dial(phone1.getOwner(), phone2.getPhoneNumber());
-        phone2.dial(phone2.getOwner(), phone1.getPhoneNumber());
+        phone1.dial(phone2.getPhoneNumber());
+        phone2.dial(phone1.getPhoneNumber());
 
         System.out.println("Please enter the number you want to call: ");
         String callNumber = scanner.nextLine();
 
-        phone1.dial(phone1.getOwner(), callNumber);
+        phone1.dial(callNumber);
         scanner.close();
     }
     public static void display(CellPhone phone){
@@ -39,6 +39,7 @@ public class CellPhoneApplication {
         String phoneNumber = scanner.nextLine();
         System.out.print("Owner: ");
         String owner = scanner.nextLine();
+        System.out.println("-----------------------------------------------------------------------");
 
         phone.setSerialNumber(serialNumber);
         phone.setModel(model);

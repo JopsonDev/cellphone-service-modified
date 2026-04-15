@@ -26,8 +26,8 @@ public class CellPhone {
     public String getPhoneNumber() { return phoneNumber; }
     public String getOwner() { return owner; }
 
-    public void dial(String name, String number){
-        System.out.println(name + "'s phone is calling " + number);
+    public void dial(String number){
+        System.out.println(owner + "'s phone is calling " + number);
     }
 
 }
