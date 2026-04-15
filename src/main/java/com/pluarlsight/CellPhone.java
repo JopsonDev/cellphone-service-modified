@@ -29,4 +29,5 @@ public class CellPhone {
     public void dial(String name, String number){
         System.out.println(name + "'s phone is calling " + number);
     }
+
 }
